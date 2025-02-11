@@ -1,0 +1,43 @@
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+header{
+
+    background-color: rgb(145, 123, 166);
+    text-align: center;
+    padding: 10px;
+
+    
+}
+
+#about img{
+
+    padding: 20px;
+    float: left;
+
+}
+
+#about h2  {
+
+    padding: 0px; 
+    font-size: 25px;
+
+}
+
+#about p{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+       
+}
+
+#skills{
+
+    padding: 10px;
+
+    
+}
