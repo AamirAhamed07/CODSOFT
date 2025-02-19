@@ -10,30 +10,33 @@
 
 .nav{
    
-   padding: 10px;
-   
-}
+margin-left: 800px;
+padding: 10px 10px;
+  
+   }
 
 
 .nav ul {
 
-    text-align: right;
-    margin: 30px 10px ;
+   list-style-type: none;
+    padding: 20px;
+    display: flex;
+    align-items:center ;
+    
 
 
 }
 
 .nav ul li {
 
-    display: inline;
-    margin-right: 50px;
+    margin-left: 50px;
    
 
 }
 
 .nav ul li a{
 
-    color: rgb(230, 230, 239);
+    color: rgb(0, 0, 0);
     font-size: 19px;
     text-decoration: none;
     font-weight: 700;
@@ -43,31 +46,39 @@
 .nav ul li a:hover,
 .nav ul li.active a{
 
-    color: rgb(7, 214, 246);
+    color: rgb(255, 0, 85);
     text-decoration: underline;
 }
 
+
+
 body{
 
-    background-color: rgb(11, 11, 11);
-
+    background-color:rgb(255, 255, 255);
+    background-image: url(https://img.freepik.com/premium-vector/white-abstract-background-design_1208459-106.jpg?semt=ais_hybrid);
+    background-repeat:no-repeat;
+    background-size: cover ;
+    max-width: 1300px;
+  
+    
     
 }
 
 
 .content{
 
-    color: rgb(242, 248, 248);
+    color: rgb(0, 0, 0);
     text-align: left;
     margin: 50px ;
     margin-left: 200px;
+    
     
     
 }
 
 .content h2{
 
-    color: yellow;
+    color:palevioletred;
     font-size: 40px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     transform: translateX(-100%);
@@ -96,36 +107,22 @@ body{
   animation: slideInLeft 2.0s ease-out forwards;
 }
 
-.logo img{
+.content h4{
 
-    height: 300px;
-    width: 325px;
-    border-radius: 50%;
-    float: right;
-    margin-left: 220px;
-    border: 5px solid rgb(7, 214, 246);
-    border: 5px solid transparent;
-  position: relative;
-  padding: 10px;
-  animation: leftToRight 1.5s forwards;
-    
+  margin-top: 20px;
+  font-family:cursive;
+  text-align:left;
+  color:rgb(52, 148, 151);
+  
+
 }
 
+.logo img{
 
+   transform: translate(50px ,50px);
+   width: 450px ;
 
-@keyframes leftToRight {
-    0% {
-      border-left: 5px solid #e4e1eceb;
-      border-top: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 5px solid transparent;
-    }
-    100% {
-      border-left: 5px solid  yellow;
-      border-top: 5px solid  rgb(7, 214, 246);
-      border-right: 5px solid rgb(7, 214, 246);
-      border-bottom: 5px solid rgb(249, 8, 8);
-    }
+   
   }
 
 
@@ -134,6 +131,156 @@ body{
     display: flex;
 }
 
+.connect{
+
+ margin-left: 465px;
+ transform: scale(1.5);
+ 
+ 
+ }
+
+.fa-twitter {
+
+  margin-left: 30px;
+
+}
+.fa-instagram{
+
+  margin-left: 30px;
+}
+
+.fa-facebook{
+
+  margin-left: 30px;
+}
+
+.fa-github{
+
+  margin-left: 30px;
+}
+
+
+.Resume{
+
+  margin-top: 40px;
+  margin-left: 220px;
+  border-color:rgb(96, 154, 158);
+  color: rgb(255, 255, 255);
+  background-color:rgb(58, 124, 130) ;
+  padding: 5px 10px;
+ box-shadow: inset 5px 5px 15px rgba(58, 124, 130, 0.6);
+
+}
+
+
+ .aboutme {
+  margin-top: 140px;
+  padding: 50px 0;
+  font-family: sans-serif;
+  display: flex;
+ }
+
+
+ .container{
+  font-size: larger;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(226, 188, 226);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px  rgb(0, 0, 0,0.1);
+  animation: heartbeat 1.5s ease-in-out infinite;
+ }
+
+ .container h1{
+
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(3, 3, 3);
     
 
+ }
 
+
+ .container p{
+
+  color: black;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 20px;
+
+ }
+
+ 
+.container p::first-letter{
+
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.0);
+  }
+}
+
+
+.text h1{
+
+  color:rgb(224, 217, 217) ;
+  
+  font-size:250px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.skills-section {
+
+  padding:50px 20px;
+  text-align: center;
+}
+
+.skills-section h1{
+
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: palevioletred;
+
+}
+
+.skills-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 10px;
+
+}
+
+.skills-container h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color:rgb(240, 64, 123) ;
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgb(1, 1, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-container h3:hover{
+  transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
