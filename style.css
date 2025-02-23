@@ -8,43 +8,41 @@
     
 }
 
-.nav{
+.navbar{
    
-margin-left: 800px;
-padding: 10px 10px;
-  
-   }
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 5px;
+background-color: rgb(80, 69, 69);  
+
+}
 
 
-.nav ul {
+.nav-links{
+  list-style: none;
+  display: flex;
+}
 
-   list-style-type: none;
+.nav-links li {
+
+    margin-left: 20px;
     padding: 20px;
-    display: flex;
-    align-items:center ;
-    
-
-
-}
-
-.nav ul li {
-
-    margin-left: 50px;
    
-
 }
 
-.nav ul li a{
+.nav-links a{
 
-    color: rgb(0, 0, 0);
-    font-size: 19px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     text-decoration: none;
     font-weight: 700;
     transition: .5;
+    display: block;
 }
 
-.nav ul li a:hover,
-.nav ul li.active a{
+.nav-links a:hover,
+.nav-links .active a{
 
     color: rgb(255, 0, 85);
     text-decoration: underline;
@@ -54,11 +52,11 @@ padding: 10px 10px;
 
 body{
 
-    background-color:rgb(255, 255, 255);
-    background-image: url(https://img.freepik.com/premium-vector/white-abstract-background-design_1208459-106.jpg?semt=ais_hybrid);
+    background-color:whitesmoke ;
+    background-image: url();
     background-repeat:no-repeat;
     background-size: cover ;
-    max-width: 1300px;
+    max-width: 100%;
   
     
     
@@ -70,7 +68,7 @@ body{
     color: rgb(0, 0, 0);
     text-align: left;
     margin: 50px ;
-    margin-left: 200px;
+    margin-left: 100px;
     
     
     
@@ -119,7 +117,7 @@ body{
 
 .logo img{
 
-   transform: translate(50px ,50px);
+   
    width: 450px ;
 
    
@@ -133,7 +131,7 @@ body{
 
 .connect{
 
- margin-left: 465px;
+ margin-left: 400px;
  transform: scale(1.5);
  
  
@@ -174,7 +172,7 @@ body{
 
 
  .aboutme {
-  margin-top: 140px;
+  margin-top: 130px;
   padding: 50px 0;
   font-family: sans-serif;
   display: flex;
@@ -255,32 +253,231 @@ body{
 .skills-section h1{
 
   font-size: 40px;
+  max-width: 500px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(61, 61, 244);
+  border-radius: 10px;
+  padding: 10px ;
   margin-bottom: 40px;
-  color: palevioletred;
+  margin-left: 370px;
 
 }
 
-.skills-container{
+.skills-container {
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   gap: 20px;
   padding: 0 10px;
-
 }
 
-.skills-container h3{
+.skills-container h3 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color:rgb(240, 64, 123) ;
   color: white;
   border-radius: 10px;
   width: 150px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgb(1, 1, 1);
+  margin-left: 550px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
 }
 
 .skills-container h3:hover{
   transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.education-section{
+  margin-top: 80px;
+  padding: 50px 0;
+  font-family: sans-serif;
+  display: flex;
+}
+
+
+.education-entry{
+  font-size: larger;
+  margin: 0 auto;
+  padding: 30px 80px 0px 80px;
+  background-color: rgb(226, 188, 226);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px  rgb(0, 0, 0,0.1);
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+
+.education-entry h2{
+
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  font-weight: 700;
+
+}
+.education-entry h3{
+
+  color: rgb(121, 7, 227);
+  font-weight: 500;
+  font-size: 30px;
+   
+}
+
+.school-name{
+
+  font-size: 20px;
+  margin: 5px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.college-name{
+
+  font-size: 20px;
+  margin: 5px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.duration{
+
+  font-size: 20px;
+  line-height: 1.5;
+ 
+}
+
+
+.text2{
+
+  color:rgb(224, 217, 217) ;
+  
+  font-size:230px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.projects-section{
+
+  width: 80%;
+  margin: 70px auto;
+  text-align: center;
+  
+}
+ 
+
+.projects-section h2{
+
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 900px;
+  background-color: rgb(61, 61, 244);
+  border-radius: 10px;
+  padding: 10px ;
+}
+
+.project-card{
+
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0,0.1);
+  overflow: hidden;
+  color: rgb(61, 66, 71);
+  background-color: rgb(226, 188, 226);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+
+  width: 100%;
+  height: auto;
+}
+
+.project-info{
+
+  padding: 20px;
+}
+
+.project-info h3{
+
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: rgb(208, 33, 91);
+}
+
+
+.project-info p{
+
+  font-size:20px ;
+}
+
+
+.project-link{
+
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.project-link:hover {
+  color: #087af5;
+}
+
+
+.footer{
+
+  background-color: rgb(88, 77, 77);
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+
+.footer-item{
+
+  max-width: 300px;
+  margin: 0 15px;
+
+}
+
+.footer-item h3{
+
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(59, 170, 207);
+}
+
+.footer-item p{
+
+  font-family: 15px;
+  margin: 5px 0;
+  color: antiquewhite;
+
+}
+
+.footer-bottom{
+
+  border-top: 1px solid;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: aliceblue;
+
+}
+
+.footer-bottom p{
+
+  font-size: 15px;
 }
